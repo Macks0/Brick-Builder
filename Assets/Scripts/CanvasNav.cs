@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Max Schmit 2/13/2024
 public class CanvasNav : MonoBehaviour
 {
-    // Vars
-   
+      
 
     // Methods
-    public void LoadNextScene(int aIDX)
+    public void LoadNextScene()
     {
-        SceneManager.LoadScene(aIDX);
+        GameManager.Instance.NextScene();
     }
 
     public void LoadStartScreen()
     {
-        LoadNextScene(0);
+        GameManager.Instance.StartScene();
     }
 
-    // Accessors
+     
 
 }
